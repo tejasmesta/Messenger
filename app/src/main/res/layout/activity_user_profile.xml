@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2F4F4F"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:src="@drawable/default_profile_pic"
+        android:layout_marginBottom="25dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/single_user_display_image"
+        />
+
+    <TextView
+        android:layout_below="@id/single_user_display_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DISPLAY NAME"
+        android:layout_centerInParent="true"
+        android:textColor="#D2B48C"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:id="@+id/single_user_display_name"
+        />
+
+    <TextView
+        android:layout_below="@id/single_user_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Hey there! I am using messenger"
+        android:textColor="#F0F8FF"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:id="@+id/single_user_display_status"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/single_user_display_status"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Total Friends"
+            android:textColor="#F0F8FF"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:layout_margin="15dp"
+            android:id="@+id/single_user_total_friends"
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send friend request"
+            android:backgroundTint="#FA8072"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/single_user_friend_request"
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="decline friend request"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="#FA8072"
+            android:id="@+id/single_user_decline_friend_request"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
